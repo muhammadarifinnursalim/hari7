@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Transisi</title>
+  <style>
+   #myDIV {
+  border: 1px solid black;
+  background-color: lightblue;
+  width: 270px;
+  height: 200px;
+  overflow: auto;
+}
+
+#myDIV:hover {
+  background-color: coral;
+  width: 570px;
+  height: 500px;
+  padding: 100px;
+  border-radius: 25px;
+}
+  </style>
+</head>
+<body>
+  <p>Mouse over pada DIV element akan merubah warna dan ukuran</p>
+  <button onclick="myFunction()">Klik tombol</button>
+  <div id="myDIV">
+    <h1>myDIV</h1>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDIV").style.transition = "all 2s";
+    }
+  </script>
+</body>
+</html>
